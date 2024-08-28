@@ -1,0 +1,71 @@
+# Alphabet Soup Problem
+
+# Start Program
+# Define Function
+def alphabet_soup(string):
+    # Sort Characters
+    char_list = list(string)
+    
+    # Sort in Alphabetical Order
+    sorted_list = sorted(char_list)
+    
+    # Joins into a single string
+    sorted_string = ''.join(sorted_list)
+    
+    #Return Sorted String
+    return sorted_string    
+
+# Output
+print(alphabet_soup("thequickbrownfoxjumpsoveralazydog"))  
+
+# Emoticon Problem 
+
+# Start Program
+# Define Function
+def emotify(sentence):
+    
+    # Split the sentence into a list of words
+    words = sentence.split()
+
+    # Initialize an empty list to store the converted words or emoticons
+    result = []
+
+    # Use of If Else Statement
+    for word in words:
+        if word == "smile":
+            result.append(":)")
+        elif word == "grin":
+            result.append(":D")
+        elif word == "sad":
+            result.append(":(")
+        elif word == "mad":
+            result.append(">:(")
+        else:
+            # keep it as is, if it does not match anything
+            result.append(word)
+
+    # Joins into a single string
+    return ' '.join(result)
+
+# Output
+print(emotify("hi brizza, even when i feel sad or mad , your smile and grin always cheer me up."))
+
+
+# Unpacking List Problem
+
+# Start Program
+# List
+lst = [1, 2, 3, 4, 5, 6]
+
+# Set Code to differentiate the first, middle, and last.
+
+first = lst[0] # first index 0
+
+last = lst[-1] # -1, therefore it would count backward
+
+middle = lst[1:-1] # Counts the first index (second) til it stops to the last index
+
+# Output
+print("first:", first)
+print("middle:", middle)
+print("last:", last)
